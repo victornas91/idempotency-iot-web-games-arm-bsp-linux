@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Idempotency in 3D: Multi-Domain Interactive Simulations</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
+  <link rel="stylesheet" href="./src/styles.css" />
+
+  <!-- Three.js CDN Import Map (no bundler/build tool required) -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="app">
+    <!-- WebGL 3D Canvas Layer -->
+    <div id="canvas-container"></div>
+
+    <!-- Top Domain Navigation Bar -->
+    <div id="nav-container"></div>
+
+    <!-- Left HUD, Metrics, Controls & Log Console -->
+    <div id="hud-container"></div>
+  </div>
+
+  <!-- Application Bootstrap (ES Module) -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
+

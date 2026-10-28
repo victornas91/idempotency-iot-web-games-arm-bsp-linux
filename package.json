@@ -1,0 +1,19 @@
+{
+  "name": "idempotency-iot-web-games-arm-bsp-linux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "serve": "python -m http.server 8080"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/three": "^0.186.0",
+    "typescript": "^7.0.2"
+  }
+}
